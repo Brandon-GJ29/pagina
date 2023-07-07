@@ -1,34 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi página web</title>
+  <title>Mi Portafolio</title>
+  <style>
+    /* Estilos generales */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    .contacto {
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 1;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 10px;
+    }
+
+    main {
+      padding-top: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    /* Estilos específicos */
+    .proyecto {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .proyecto h3 {
+      margin-top: 0;
+    }
+
+    .texto-grande {
+      font-size: 84px;
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      color: #fff;
+      margin-left: 20px; /* Ajusta el valor según necesites */
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/eeb5c431c2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
-    <h1>Bienvenido a mi página web</h1>
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#sobre-mi">About</a></li>
+        <li><a href="#resumen">Resume</a></li>
+        <li><a href="#proyectos">Portafolio</a></li>
       </ul>
     </nav>
+    <div class="contacto">
+      Tel: 5579182407
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Acerca de mí</h2>
-      <p>Hola, soy [Tu nombre]. Esta es mi página web personal.</p>
+    <section id="inicio">
     </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <p>Puedes contactarme a través de mi dirección de correo electrónico: [correo electrónico].</p>
+    <section id="sobre-mi">
+        
+      <p class="texto-grande" style="margin-left: 60px; margin-bottom: 20px;">BRANDON</p>
     </section>
-  </main>
+
+    <!-- Otras secciones del sitio -->
+    <i class="fa-brands fa-instagram fa-beat-fade" style="color: #9a9898; margin-top: 300px;"></i>
+    <i class="fa-brands fa-facebook fa-beat-fade" style="color: #ffffff;margin-top: 300px;margin-left: 60px"></i>
+</main>
 
   <footer>
-    <p>&copy; 2023 Mi página web. Todos los derechos reservados.</p>
+    <!-- Contenido del pie de página -->
   </footer>
 </body>
 </html>
